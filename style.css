@@ -1,0 +1,88 @@
+
+.root {
+    -fx-background-image: url("background.jpg");
+    -fx-font-family: "Comic Sans MS";
+    -fx-base: #3f474f;
+    -fx-accent: #e7eff7 ;
+    -fx-default-button: #7f878f ;
+    -fx-focus-color: #efefef;
+    -fx-faint-focus-color: #efefef22;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;
+
+}
+
+.text-input:focused {
+    -fx-highlight-text-fill: ladder(
+        -fx-highlight-fill,
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
+    );
+}
+.btnSwap {
+        -fx-background-image:url('swap.jpg') no-repeat!important;
+}
+.logo {
+    -fx-border-radius:50%!important;
+    -fx-text-align:center!important;
+}
+
+.left-pane {
+    -fx-background-color:black!important;
+}
+
+.button {
+    -fx-background-color :  #303040;
+    -fx-background-radius:none!important;
+    -fx-text-fill : #e7e5e5;
+        -fx-cursor: hand;
+
+}
+.btn {
+    -fx-background-color :  #303040;
+    -fx-background-radius:10px!important;
+    -fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : orange;
+    -fx-cursor: hand;
+
+}
+.button:pressed
+{
+-fx-background-color : orange;
+}
+.labelHome {
+    -fx-text-fill: black;
+    -fx-font-size:13px;
+}
+.labelTitle{
+   -fx-font-size:20px;
+   -fx-text-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);
+
+}
+.labelInput {
+    -fx-text-fill: black;
+    -fx-font-size:13px;
+    -fx-font-weight:700;
+}
+.uploadButton{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0.0, 0.0)!important;
+    -fx-background-color:transparent!important;
+}
+.uploadButton:hover{
+    -fx-background-color : orange!important;
+    -fx-cursor: hand;
+}
+.passwordLabel{
+    -fx-font-size:12px!important;
+    -fx-text-fill:red!important;
+}
